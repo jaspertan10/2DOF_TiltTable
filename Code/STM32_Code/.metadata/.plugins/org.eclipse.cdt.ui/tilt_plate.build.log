@@ -1,0 +1,19 @@
+14:48:30 **** Incremental Build of configuration Debug for project tilt_plate ****
+make -j9 all 
+arm-none-eabi-gcc -o "tilt_plate.elf" @"objects.list"   -mcpu=cortex-m0 -T"/Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/STM32F042F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tilt_plate.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tilt_plate.elf
+ 
+arm-none-eabi-size  tilt_plate.elf 
+arm-none-eabi-objdump -h -S tilt_plate.elf  > "tilt_plate.list"
+arm-none-eabi-objcopy  -O binary tilt_plate.elf  "tilt_plate.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4184	     12	   1572	   5768	   1688	tilt_plate.elf
+Finished building: default.size.stdout
+ 
+Finished building: tilt_plate.list
+ 
+Finished building: tilt_plate.bin
+ 
+
+14:48:30 Build Finished. 0 errors, 0 warnings. (took 464ms)
+
