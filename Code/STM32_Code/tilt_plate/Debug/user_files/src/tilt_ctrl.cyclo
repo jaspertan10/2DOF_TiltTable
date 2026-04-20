@@ -1,0 +1,10 @@
+../user_files/src/tilt_ctrl.c:50:12:servo_angle_to_cmd_us	1
+../user_files/src/tilt_ctrl.c:63:23:get_pin_index	2
+../user_files/src/tilt_ctrl.c:81:20:tilt_set_output	1
+../user_files/src/tilt_ctrl.c:92:20:tilt_set_analog	1
+../user_files/src/tilt_ctrl.c:103:5:read_tilt_x_position	6
+../user_files/src/tilt_ctrl.c:166:5:read_tilt_y_position	6
+../user_files/src/tilt_ctrl.c:230:6:x_reading_in_range	3
+../user_files/src/tilt_ctrl.c:239:6:y_reading_in_range	3
+../user_files/src/tilt_ctrl.c:245:6:tilt_x_set_position	1
+../user_files/src/tilt_ctrl.c:250:6:tilt_y_set_position	1
