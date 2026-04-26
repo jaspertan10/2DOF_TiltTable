@@ -1,0 +1,15 @@
+#ifndef TILT_CTRL_H
+#define TILT_CTRL_H
+
+
+
+int read_tilt_x_position();
+
+
+
+
+
+
+
+
+#endif

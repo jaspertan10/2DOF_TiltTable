@@ -1,0 +1,23 @@
+#ifndef TILT_CTRL_H
+#define TILT_CTRL_H
+
+
+
+#define LOOP_PERIOD_MS
+#define TILT_ADC_SAMPLE_NUM 			5
+
+
+
+
+
+int read_tilt_x_position();
+int read_tilt_y_position();
+
+
+
+
+
+
+
+
+#endif

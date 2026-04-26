@@ -1,0 +1,45 @@
+2026-04-18 00:06:06,181 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 989591064 Bytes (1073741824)
+2026-04-18 00:06:06,470 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1002051176 Bytes (1073741824)
+2026-04-18 00:06:06,874 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 684264528 Bytes (1073741824)
+2026-04-18 00:06:07,333 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: ADC
+2026-04-18 00:06:07,334 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-04-18 00:06:07,334 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2026-04-18 00:06:07,335 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8F0
+2026-04-18 00:06:07,335 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-04-18 00:06:07,335 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-04-18 00:06:07,335 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-04-18 00:06:07,336 [INFO] CodeGenerator:892 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2026-04-18 00:06:07,643 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/MXTmpFiles/license.tmp_save
+2026-04-18 00:06:07,897 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/MXTmpFiles/license.tmp
+2026-04-18 00:06:07,955 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/MXTmpFiles/gpio.tmp_save
+2026-04-18 00:06:08,119 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/MXTmpFiles/gpio.tmp
+2026-04-18 00:06:08,217 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Src/stm32f0xx_it.c_save
+2026-04-18 00:06:08,405 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Src/stm32f0xx_it.c
+2026-04-18 00:06:08,409 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Inc/stm32f0xx_it.h_save
+2026-04-18 00:06:08,472 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Inc/stm32f0xx_it.h
+2026-04-18 00:06:08,481 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Src/stm32f0xx_hal_msp.c_save
+2026-04-18 00:06:08,625 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Src/stm32f0xx_hal_msp.c
+2026-04-18 00:06:08,629 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/MXTmpFiles/system.tmp_save
+2026-04-18 00:06:08,691 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/MXTmpFiles/system.tmp
+2026-04-18 00:06:08,698 [INFO] CodeEngine:321 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Inc/stm32f0xx_hal_conf.h_save
+2026-04-18 00:06:08,763 [INFO] CodeEngine:345 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Inc/stm32f0xx_hal_conf.h
+2026-04-18 00:06:08,787 [WARN] IPConfigManager:3811 - IP not found : TIM
+2026-04-18 00:06:08,788 [WARN] CodeGenerator:4259 - IP not found : null
+2026-04-18 00:06:08,790 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Inc/main.h_save
+2026-04-18 00:06:08,889 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Inc/main.h
+2026-04-18 00:06:08,892 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Src/main.c_save
+2026-04-18 00:06:09,013 [INFO] CodeEngine:289 - Generated code: /Users/jaspertan/Desktop/SCU/MECH208/Final_Project/Code/STM32_Code/tilt_plate/Core/Src/main.c
+2026-04-18 00:06:09,533 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 68mS.
+2026-04-18 00:06:09,547 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-04-18 00:06:09,710 [INFO] ConfigFileManager:1595 - The Die is : DIE445
+2026-04-18 00:06:12,275 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 2727mS.
+2026-04-18 00:06:12,279 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-04-18 00:06:12,281 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2026-04-18 11:02:06,435 [INFO] WebApp:194 - Connection lost
+2026-04-18 11:02:07,195 [INFO] WebApp:191 - Connection restablished
+2026-04-18 20:58:40,792 [INFO] WebApp:194 - Connection lost
+2026-04-18 20:58:42,156 [INFO] WebApp:191 - Connection restablished
+2026-04-18 21:27:20,256 [INFO] WebApp:194 - Connection lost
+2026-04-18 21:27:20,918 [INFO] WebApp:191 - Connection restablished
+2026-04-18 21:27:21,123 [INFO] WebApp:194 - Connection lost
+2026-04-18 21:27:21,512 [INFO] WebApp:191 - Connection restablished

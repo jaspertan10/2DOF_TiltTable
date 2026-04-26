@@ -1,0 +1,38 @@
+#ifndef TILT_CTRL_H
+#define TILT_CTRL_H
+
+#include "stdbool.h"
+
+// Valid reading windows
+#define X_ADC_VALID_MIN 				1440
+#define X_ADC_VALID_MAX 				2320
+#define Y_ADC_VALID_MIN 				290
+#define Y_ADC_VALID_MAX 				1330
+
+
+
+#define LOOP_PERIOD_MS 					10	//10ms loop time = 100Hz
+#define TILT_ADC_SAMPLE_NUM 			5
+
+
+
+
+
+
+
+int read_tilt_x_position();
+int read_tilt_y_position();
+
+bool x_reading_in_range(int x_input);
+bool y_reading_in_range(int y_input);
+
+
+
+
+
+
+
+
+
+
+#endif

@@ -1,0 +1,120 @@
+
+
+#include "tilt_ctrl.h"
+#include "main.h"
+
+extern ADC_HandleTypeDef hadc;
+extern void delay_us(uint16_t us);
+
+static inline uint8_t get_pin_index(uint16_t GPIO_Pin)
+{
+	uint8_t index = 0;
+
+	//GPIO_Pin == 0 is invalid
+	assert_param(GPIO_Pin != 0);
+
+	while ((GPIO_Pin & 0x1U) == 0U)
+	{
+		index++;
+		GPIO_Pin >>= 1;
+	}
+
+	return index;
+}
+
+
+
+static inline void tilt_set_output(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+	int pin_num = get_pin_index(GPIO_Pin);
+
+	//Clear GPIO MODER bits
+	GPIOx->MODER &= ~(0x3U << (pin_num * 2));
+
+	//Set GPIO MOde to Output
+	GPIOx->MODER |= (0x01U << (pin_num * 2));
+}
+
+static inline void tilt_set_analog(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+	int pin_num = get_pin_index(GPIO_Pin);
+
+	//Set GPIO MOde to Analog
+	GPIOx->MODER |= (0x3U << (pin_num * 2));
+
+}
+
+
+
+int read_tilt_x_position()
+{
+	ADC_ChannelConfTypeDef sConfig = {0};
+	uint32_t sum = 0;
+
+	//Set Yup and Ydown as GPIO Outputs
+	tilt_set_output(Tilt_Yup_GPIO_Port, Tilt_Yup_Pin);
+	tilt_set_output(Tilt_Ydown_GPIO_Port, Tilt_Ydown_Pin);
+
+	//Set Yup to High and Ydown to Low, creating a voltage gradient on the Y plane
+	HAL_GPIO_WritePin(Tilt_Yup_GPIO_Port, Tilt_Yup_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(Tilt_Ydown_GPIO_Port, Tilt_Ydown_Pin, GPIO_PIN_RESET);
+
+
+	//Set Xle and Xri to ADC Inputs
+	tilt_set_analog(Tilt_Xle_GPIO_Port, Tilt_Xle_Pin);
+	tilt_set_analog(Tilt_Xri_GPIO_Port, Tilt_Xri_Pin);
+
+	//Configure the ADC channel to be read
+	HAL_ADC_ConfigChannel(&hadc, sConfig)
+
+
+	// Let resistive plate settle
+	delay_us(300);
+
+	//Start ADC
+	HAL_ADC_Start(&hadc);
+
+	//Dummy read
+	HAL_ADC_PollForConversion(&hadc, 10);
+	sum += HAL_ADC_GetValue(&hadc);
+
+
+	//Read TILT_ADC_SAMPLE_NUM number of samples, then average it
+	for (int i = 0; i < TILT_ADC_SAMPLE_NUM; i++)
+	{
+		HAL_ADC_PollForConversion(&hadc, 10);
+		sum += HAL_ADC_GetValue(&hadc);
+	}
+
+
+	//Stop ADC conversion
+	HAL_ADC_Stop(&hadc);
+
+
+	return (sum / TILT_ADC_SAMPLE_NUM);
+
+}
+
+
+
+
+int readXPos()
+{
+  pinMode(TILT_Y_UP_PIN, OUTPUT);
+  pinMode(TILT_Y_DOWN_PIN, OUTPUT);
+  digitalWrite(TILT_Y_UP_PIN, HIGH);
+  digitalWrite(TILT_Y_DOWN_PIN, LOW);
+
+  pinMode(TILT_X_LEFT_PIN, INPUT);
+  pinMode(TILT_X_RIGHT_PIN, INPUT);
+
+  delayMicroseconds(300);
+  analogRead(TILT_X_LEFT_PIN); // discard first sample
+
+  long sum = 0;
+  for (int i = 0; i < 5; i++) {
+    sum += analogRead(TILT_X_LEFT_PIN);
+  }
+
+  return sum / 5;
+}

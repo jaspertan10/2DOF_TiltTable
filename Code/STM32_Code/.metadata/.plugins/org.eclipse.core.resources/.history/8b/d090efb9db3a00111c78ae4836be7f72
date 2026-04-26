@@ -1,0 +1,66 @@
+#ifndef TILT_CTRL_H
+#define TILT_CTRL_H
+
+#include "stdbool.h"
+
+// Valid reading windows
+#define X_ADC_VALID_MIN 				1440
+#define X_ADC_VALID_MAX 				2320
+#define Y_ADC_VALID_MIN 				290
+#define Y_ADC_VALID_MAX 				1330
+
+// Max allowed jump per loop
+#define X_MAX_STEP						80
+#define Y_MAX_STEP						100
+
+// Tilt Plate Middle Position Values
+#define TILT_X_MIDDLE_POS				1880
+#define TILT_Y_MIDDLE_POS				810
+
+// Ball bad read count threshold
+#define BALL_BAD_READ_THRESHOLD			6
+
+#define INTEGRAL_LIMIT_X				5000.0
+#define INTEGRAL_LIMIT_Y				5000.0
+
+
+#define LOOP_PERIOD_MS 					10	//10ms loop time = 100Hz
+#define TILT_ADC_SAMPLE_NUM 			5
+
+
+// Set point of (X, Y) position
+extern int setpoint_x_position;
+extern int setpoint_y_position;
+
+// Last valid ball position (X, Y)
+extern int last_good_x;
+extern int last_good_y;
+
+// Counts number of bad reads - if exceeds
+extern int ball_bad_read_count;
+
+
+/***** Control Loop Terms *****/
+// Integral Terms
+extern float integral_x;
+extern float integral_y;
+
+
+
+
+int read_tilt_x_position();
+int read_tilt_y_position();
+
+bool x_reading_in_range(int x_input);
+bool y_reading_in_range(int y_input);
+
+
+
+
+
+
+
+
+
+
+#endif

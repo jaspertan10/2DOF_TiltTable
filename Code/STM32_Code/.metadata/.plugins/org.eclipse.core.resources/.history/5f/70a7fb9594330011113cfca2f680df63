@@ -1,0 +1,81 @@
+
+
+#include "tilt_ctrl.h"
+#include "main.h"
+
+
+#define GPIOA_BASEADDR					(uint32_t)0x48000000
+#define GPIOB_BASEADDR					(uint32_t)0x48000400
+
+
+/* GPIOA Peripheral Register Definition Structure */
+typedef struct {
+	volatile uint32_t MODER;
+	volatile uint32_t OTYPER;
+	volatile uint32_t OSPEEDR;
+	volatile uint32_t PUPDR;
+	volatile uint32_t IDR;
+	volatile uint32_t ODR;
+	volatile uint32_t BSRR;
+	volatile uint32_t LCKR;
+	volatile uint32_t AFR[2];		/* AFR[0]: GPIO alternate function low register, AF[1]: GPIO alternate function high register */
+	volatile uint32_t BRR;
+} GPIO_RegDef_t;
+
+static inline uint8_t get_pin_index(uint16_T GPIO_Pin)
+{
+	int index = 0;
+
+	while (GPIO_Pin & 0x1U != 0U)
+	{
+		index++;
+	}
+
+	return index;
+}
+
+
+
+static inline void tilt_set_output(GPIO_TypeDef* GPIOx, uint8_t pin)
+{
+
+
+	//Clear GPIO MODER bits
+	GPIOx->MODER &= ~(0x3U << (pin * 2));
+
+	//Set GPIO MOde to Output
+	GPIOx->MODER |= (0x01U << (pin * 2));
+}
+
+
+int read_x_position()
+{
+
+	tilt_set_output()
+
+
+}
+
+
+
+
+int readXPos()
+{
+  pinMode(TILT_Y_UP_PIN, OUTPUT);
+  pinMode(TILT_Y_DOWN_PIN, OUTPUT);
+  digitalWrite(TILT_Y_UP_PIN, HIGH);
+  digitalWrite(TILT_Y_DOWN_PIN, LOW);
+
+  pinMode(TILT_X_LEFT_PIN, INPUT);
+  pinMode(TILT_X_RIGHT_PIN, INPUT);
+
+  delayMicroseconds(300);
+  analogRead(TILT_X_LEFT_PIN); // discard first sample
+
+  long sum = 0;
+  for (int i = 0; i < 5; i++) {
+    sum += analogRead(TILT_X_LEFT_PIN);
+  }
+
+  return sum / 5;
+}

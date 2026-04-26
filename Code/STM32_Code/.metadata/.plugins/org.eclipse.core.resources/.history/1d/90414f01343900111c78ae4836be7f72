@@ -1,0 +1,18 @@
+#ifndef TILT_CTRL_H
+#define TILT_CTRL_H
+
+
+#define TILT_ADC_SAMPLE_NUM 5
+
+
+
+int read_tilt_x_position();
+
+
+
+
+
+
+
+
+#endif
