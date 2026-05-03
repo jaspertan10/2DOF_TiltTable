@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "1c736c1b-ed9d-403f-bc84-83343cfbb355")
 	(paper "A4")
+	(title_block
+		(title "Tilt Plate Board")
+		(date "2026-04-25")
+		(rev "2.0")
+		(company "Made by Jasper Tan")
+	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole"
 			(pin_names

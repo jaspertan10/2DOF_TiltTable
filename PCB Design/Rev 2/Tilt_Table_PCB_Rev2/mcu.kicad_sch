@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "32a682ea-15bc-4661-bf7a-551346f81b49")
 	(paper "A4")
+	(title_block
+		(title "Tilt Plate Board")
+		(date "2026-04-25")
+		(rev "2.0")
+		(company "Made by Jasper Tan")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
@@ -4158,6 +4164,16 @@
 		)
 		(uuid "12a9f2b2-3037-43e8-a85f-6666249d71ae")
 	)
+	(label "PC15"
+		(at 115.57 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "15cd0f01-0f3a-4c5f-956e-e71fc68e7283")
+	)
 	(label "SWCLK"
 		(at 127 93.98 0)
 		(effects
@@ -4188,6 +4204,16 @@
 		)
 		(uuid "237a0e7c-1258-4b00-8fc7-cd68d5db022e")
 	)
+	(label "UART_TX"
+		(at 115.57 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23828dbe-49b3-4948-add4-3e1b538330d3")
+	)
 	(label "Tilt_Ydown"
 		(at 120.65 58.42 0)
 		(effects
@@ -4208,15 +4234,15 @@
 		)
 		(uuid "2c6b0676-4690-4ac4-8a9e-6ab65fe3166c")
 	)
-	(label "PA8"
-		(at 115.57 152.4 0)
+	(label "UART_RX"
+		(at 115.57 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "3646d3a5-74fd-483b-80cb-edeb3a812afa")
+		(uuid "3a9861e4-72c4-4823-a1c4-9c40c8fa0da5")
 	)
 	(label "Tilt_Yup"
 		(at 120.65 55.88 0)
@@ -4238,15 +4264,15 @@
 		)
 		(uuid "48d9f5b9-8fb0-46de-a05b-ca6ee4310ce5")
 	)
-	(label "UART_RX"
-		(at 115.57 147.32 0)
+	(label "PB3{slash}4{slash}5{slash}6"
+		(at 115.57 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "566d1356-16f2-446f-8034-04bff185fc70")
+		(uuid "4d7bf9f4-c595-48e6-bb18-1aced050027b")
 	)
 	(label "Tilt_Xri"
 		(at 120.65 63.5 0)
@@ -4268,26 +4294,6 @@
 		)
 		(uuid "71149235-09dc-49d1-acaf-b69fa9a34a02")
 	)
-	(label "PA7"
-		(at 115.57 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7341613e-1684-4c91-af08-3e76c5e76820")
-	)
-	(label "PC15"
-		(at 115.57 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "823a277a-21a7-417c-9c8d-fe770cb8834e")
-	)
 	(label "UART_TX"
 		(at 69.85 60.96 180)
 		(effects
@@ -4307,16 +4313,6 @@
 			(justify left)
 		)
 		(uuid "8e172ad1-dce2-4cb7-874d-a0d1addf0b04")
-	)
-	(label "UART_TX"
-		(at 115.57 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "92e7c922-3951-45c5-8a0e-2a3404620e8c")
 	)
 	(label "PA7"
 		(at 120.65 73.66 0)
@@ -4359,6 +4355,16 @@
 		(uuid "b7b028b9-d2d7-464d-92d0-9c8e8adba1fd")
 	)
 	(label "PA8"
+		(at 115.57 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd8a8fb4-dbd6-4e1f-99b4-b64852c66a82")
+	)
+	(label "PA8"
 		(at 120.65 76.2 0)
 		(effects
 			(font
@@ -4368,15 +4374,15 @@
 		)
 		(uuid "bd93b764-2d36-41ba-bf8c-d9ac414e1feb")
 	)
-	(label "PB3{slash}4{slash}5{slash}6"
-		(at 115.57 157.48 0)
+	(label "PA7"
+		(at 115.57 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "d7380b37-b635-48c9-93a6-b87597a3d5dd")
+		(uuid "d11008a3-7a6c-41a0-9f47-924eb55668a7")
 	)
 	(label "UART_RX"
 		(at 69.85 71.12 180)
@@ -4470,7 +4476,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00013c29-d331-4a47-a71a-378c99b0bf27")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR043"
 			(at 135.89 95.25 0)
 			(effects
 				(font
@@ -4520,86 +4526,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 38.1 60.96 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0aaedf97-1426-4563-807c-023a6a62c0c6")
-		(property "Reference" "RST_BTN"
-			(at 27.94 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "RST_SW"
-			(at 28.194 62.992 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
-			(at 33.02 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "PTS645SK43SMTR92 LFS"
-			(at 33.02 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PTS645SK43SMTR92 LFS"
-			(at 38.1 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" "PTS645SK43SMTR92 LFS"
-			(at 38.1 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a9ee2c05-622f-4eda-9347-161d9cd099cf")
-		)
-		(pin "1"
-			(uuid "6f373dd1-0f3c-4808-804c-3a7bb14b8977")
-		)
-		(instances
-			(project "Tilt_Table_PCB_Rev2"
-				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "RST_BTN")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -4693,7 +4620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12eb3dc8-0e52-4b28-a699-c31234e5c19e")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR040"
 			(at 125.73 113.03 0)
 			(effects
 				(font
@@ -4744,7 +4671,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR060")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4759,7 +4686,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13dc0502-9a44-4e67-9a31-20fa4539a0c2")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR044"
 			(at 156.21 80.01 0)
 			(effects
 				(font
@@ -4809,7 +4736,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR058")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -4969,7 +4896,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3eaa4c7b-de15-4cd5-840c-04d4f82e7425")
-		(property "Reference" "J13"
+		(property "Reference" "J8"
 			(at 172.72 80.0099 0)
 			(effects
 				(font
@@ -5044,7 +4971,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "J13")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -5060,7 +4987,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "451f1ffa-9a2b-4ebd-8490-bf80004c2a82")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR039"
 			(at 95.25 100.33 0)
 			(effects
 				(font
@@ -5111,7 +5038,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR053")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -5127,7 +5054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "556090fe-920c-48e6-b38e-d68419bc767f")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR035"
 			(at 54.61 161.29 0)
 			(effects
 				(font
@@ -5178,7 +5105,7 @@
 		(instances
 			(project "Tilt_Table_PCB"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR038")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -5194,7 +5121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d93897f-13f0-476b-a0a2-081b5caa3479")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR037"
 			(at 71.12 52.07 0)
 			(effects
 				(font
@@ -5245,7 +5172,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR054")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -5331,7 +5258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b218ffe-0dbc-4681-ab04-e305cd159888")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR050"
 			(at 238.76 44.45 0)
 			(effects
 				(font
@@ -5381,7 +5308,7 @@
 		(instances
 			(project ""
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR051")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -5397,7 +5324,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6cd3136a-fddd-4589-a790-19126d05312a")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR049"
 			(at 228.6 71.12 0)
 			(effects
 				(font
@@ -5448,7 +5375,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR034")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5464,7 +5391,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77204c31-f6d5-4ca6-849b-270cb3ca6537")
-		(property "Reference" "J4"
+		(property "Reference" "J6"
 			(at 147.32 92.71 0)
 			(effects
 				(font
@@ -5519,7 +5446,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "J4")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -5605,7 +5532,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81b7f458-f799-4acb-b674-6dee5e2c19ff")
-		(property "Reference" "C18"
+		(property "Reference" "C16"
 			(at 30.48 148.59 0)
 			(effects
 				(font
@@ -5659,7 +5586,7 @@
 		(instances
 			(project "Tilt_Table_PCB"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "C18")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -5675,7 +5602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88891c88-bd80-46f0-b004-761a0307ff57")
-		(property "Reference" "C26"
+		(property "Reference" "C17"
 			(at 49.53 59.6899 0)
 			(effects
 				(font
@@ -5729,7 +5656,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "C26")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -5745,7 +5672,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a2bfb0b-565c-4f47-8c02-21ca2a3d266f")
-		(property "Reference" "J8"
+		(property "Reference" "J11"
 			(at 231.14 101.5999 0)
 			(effects
 				(font
@@ -5805,7 +5732,76 @@
 		(instances
 			(project ""
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "J8")
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 38.1 60.96 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e46acf3-a8f7-46da-9221-1c0671294a31")
+		(property "Reference" "SW1"
+			(at 27.94 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RST_BTN"
+			(at 27.94 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92"
+			(at 33.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "PTS645SK43SMTR92 LFS"
+			(at 33.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PTS645SK43SMTR92 LFS"
+			(at 38.1 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec1aab76-a34c-4415-a484-51fdd06cd9a1")
+		)
+		(pin "2"
+			(uuid "e04a3a10-c176-4c99-8d46-b42c050c0cb7")
+		)
+		(instances
+			(project ""
+				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -5821,7 +5817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ce72d51-df6b-4b95-93a8-1c29ac0b4b62")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR048"
 			(at 228.6 52.07 0)
 			(effects
 				(font
@@ -5872,7 +5868,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR033")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5973,7 +5969,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a00d79a7-a687-4664-b6eb-f982b79d7839")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR033"
 			(at 38.1 148.59 0)
 			(effects
 				(font
@@ -6023,7 +6019,7 @@
 		(instances
 			(project "Tilt_Table_PCB"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR037")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -6038,7 +6034,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a077d475-eb70-47eb-9a3d-e60eb166b4a0")
-		(property "Reference" "C25"
+		(property "Reference" "C20"
 			(at 88.9 40.64 0)
 			(effects
 				(font
@@ -6092,7 +6088,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "C25")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -6107,7 +6103,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ae56f33e-d24b-4641-a7fe-db8f8450d1b2")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR051"
 			(at 238.76 63.5 0)
 			(effects
 				(font
@@ -6157,7 +6153,7 @@
 		(instances
 			(project "Tilt_Table_PCB"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR052")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -6172,7 +6168,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be042cd1-90e5-45de-837e-99a648965035")
-		(property "Reference" "C24"
+		(property "Reference" "C19"
 			(at 74.93 40.6399 0)
 			(effects
 				(font
@@ -6226,7 +6222,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "C24")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -6242,7 +6238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c16a5f1a-62df-4b35-bdd0-3d9533e7714f")
-		(property "Reference" "J1"
+		(property "Reference" "J5"
 			(at 111.125 134.62 0)
 			(effects
 				(font
@@ -6258,7 +6254,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 110.49 147.32 0)
 			(effects
 				(font
@@ -6312,7 +6308,7 @@
 		(instances
 			(project ""
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "J1")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -6328,7 +6324,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c35dd46a-b3e9-42c4-a552-0e1275b56704")
-		(property "Reference" "R24"
+		(property "Reference" "R23"
 			(at 123.19 102.87 90)
 			(effects
 				(font
@@ -6380,7 +6376,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "R24")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -6395,7 +6391,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cbc96f77-b27c-4f71-a684-1ce02fe8b12a")
-		(property "Reference" "C21"
+		(property "Reference" "C18"
 			(at 72.39 148.59 0)
 			(effects
 				(font
@@ -6449,7 +6445,7 @@
 		(instances
 			(project "Tilt_Table_PCB"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "C21")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -6464,7 +6460,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ccb3042c-27a7-4ef8-85ec-2639c51ebd3d")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR041"
 			(at 127 143.51 0)
 			(effects
 				(font
@@ -6514,7 +6510,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR01")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -6530,7 +6526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cee9059c-b7da-43c9-acb4-7e99832119bf")
-		(property "Reference" "R23"
+		(property "Reference" "R22"
 			(at 85.09 148.5899 0)
 			(effects
 				(font
@@ -6584,7 +6580,7 @@
 		(instances
 			(project "Tilt_Table_PCB"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "R23")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -6599,7 +6595,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d23c60ee-0666-403f-872b-570d53eae550")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR038"
 			(at 95.25 41.91 0)
 			(effects
 				(font
@@ -6649,7 +6645,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR055")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -6664,7 +6660,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9859549-719d-483a-a233-0fb20073afe7")
-		(property "Reference" "U5"
+		(property "Reference" "U4"
 			(at 105.41 92.71 0)
 			(effects
 				(font
@@ -6773,7 +6769,7 @@
 		(instances
 			(project ""
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "U5")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -6789,7 +6785,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd585161-55b5-4fbb-a4bd-f6bc94ecd317")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR042"
 			(at 127 148.59 0)
 			(effects
 				(font
@@ -6840,7 +6836,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR02")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -6939,7 +6935,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4090c6b-dc6f-4d59-9925-ca170a583837")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR034"
 			(at 41.91 73.66 0)
 			(effects
 				(font
@@ -6990,7 +6986,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR057")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -7005,7 +7001,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fbeba6ed-e5bf-4fb4-bb00-9cf0b6b25405")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR036"
 			(at 68.58 144.78 0)
 			(effects
 				(font
@@ -7055,7 +7051,7 @@
 		(instances
 			(project "Tilt_Table_PCB"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR041")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -7071,7 +7067,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc57cd9f-c600-4e25-ab9a-cf4440f949da")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR045"
 			(at 166.37 97.79 0)
 			(effects
 				(font
@@ -7122,7 +7118,7 @@
 		(instances
 			(project "Tilt_Table_PCB_Rev2"
 				(path "/1c736c1b-ed9d-403f-bc84-83343cfbb355/ff3f0402-ecf9-4ff0-a12c-e60ecbf97af8"
-					(reference "#PWR059")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
