@@ -4164,16 +4164,6 @@
 		)
 		(uuid "12a9f2b2-3037-43e8-a85f-6666249d71ae")
 	)
-	(label "PC15"
-		(at 115.57 152.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "15cd0f01-0f3a-4c5f-956e-e71fc68e7283")
-	)
 	(label "SWCLK"
 		(at 127 93.98 0)
 		(effects
@@ -4183,6 +4173,16 @@
 			(justify left bottom)
 		)
 		(uuid "16c8172d-ff9f-4692-b326-cd49f10afd82")
+	)
+	(label "PA7"
+		(at 115.57 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "17c30fd0-7b7c-4742-b86b-46a9b152d30c")
 	)
 	(label "SWDIO"
 		(at 157.48 149.86 0)
@@ -4204,16 +4204,6 @@
 		)
 		(uuid "237a0e7c-1258-4b00-8fc7-cd68d5db022e")
 	)
-	(label "UART_TX"
-		(at 115.57 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "23828dbe-49b3-4948-add4-3e1b538330d3")
-	)
 	(label "Tilt_Ydown"
 		(at 120.65 58.42 0)
 		(effects
@@ -4234,15 +4224,15 @@
 		)
 		(uuid "2c6b0676-4690-4ac4-8a9e-6ab65fe3166c")
 	)
-	(label "UART_RX"
-		(at 115.57 157.48 0)
+	(label "PB3{slash}4{slash}5{slash}6"
+		(at 115.57 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "3a9861e4-72c4-4823-a1c4-9c40c8fa0da5")
+		(uuid "3dd96d9c-4459-4000-887c-f6306615cf7b")
 	)
 	(label "Tilt_Yup"
 		(at 120.65 55.88 0)
@@ -4264,15 +4254,35 @@
 		)
 		(uuid "48d9f5b9-8fb0-46de-a05b-ca6ee4310ce5")
 	)
-	(label "PB3{slash}4{slash}5{slash}6"
-		(at 115.57 144.78 0)
+	(label "USB_D-"
+		(at 134.62 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49ffc337-b0ac-4751-9f03-0eee08c87ea9")
+	)
+	(label "UART_RX"
+		(at 115.57 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4d7bf9f4-c595-48e6-bb18-1aced050027b")
+		(uuid "4c2a81a6-c4fd-4428-aa60-babe33bc8ded")
+	)
+	(label "USB_D+"
+		(at 134.62 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c9e4547-7fcd-44c4-b986-870f8ae66672")
 	)
 	(label "Tilt_Xri"
 		(at 120.65 63.5 0)
@@ -4324,6 +4334,16 @@
 		)
 		(uuid "98012126-0728-40a8-8c39-0335df0257a9")
 	)
+	(label "PA8"
+		(at 115.57 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a19f261a-9a6d-4743-b33f-b5861e2dd582")
+	)
 	(label "Tilt_Ydown"
 		(at 224.79 101.6 180)
 		(effects
@@ -4355,16 +4375,6 @@
 		(uuid "b7b028b9-d2d7-464d-92d0-9c8e8adba1fd")
 	)
 	(label "PA8"
-		(at 115.57 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bd8a8fb4-dbd6-4e1f-99b4-b64852c66a82")
-	)
-	(label "PA8"
 		(at 120.65 76.2 0)
 		(effects
 			(font
@@ -4374,15 +4384,15 @@
 		)
 		(uuid "bd93b764-2d36-41ba-bf8c-d9ac414e1feb")
 	)
-	(label "PA7"
-		(at 115.57 149.86 0)
+	(label "PC15"
+		(at 115.57 152.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "d11008a3-7a6c-41a0-9f47-924eb55668a7")
+		(uuid "c6a79913-5cd0-47ed-a18b-0ee3a0133ed1")
 	)
 	(label "UART_RX"
 		(at 69.85 71.12 180)
@@ -4443,6 +4453,16 @@
 			(justify left)
 		)
 		(uuid "eaf6b834-49f9-4a69-ac95-26eea3844ad1")
+	)
+	(label "UART_TX"
+		(at 115.57 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f95049d5-3329-4a85-9b51-75c294267f21")
 	)
 	(global_label "SERVO_EN"
 		(shape input)
