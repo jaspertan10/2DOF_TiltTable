@@ -107,7 +107,7 @@
 			(usegerberextensions yes)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
-			(creategerberjobfile no)
+			(creategerberjobfile yes)
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
@@ -132,7 +132,7 @@
 			(hidednponfab no)
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
 			(drillshape 0)
@@ -537,7 +537,7 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J6"
-			(at -0.1875 -2.96 180)
+			(at -0.0875 8.14 180)
 			(layer "F.SilkS")
 			(uuid "44f06c66-a661-4c24-be84-31a62e12ad3f")
 			(effects
@@ -17063,6 +17063,102 @@
 			)
 		)
 	)
+	(gr_poly
+		(pts
+			(xy 154.5 74) (xy 154 73.5) (xy 154 74.5)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "1b747b49-7a19-4349-9187-30d882482bc6")
+	)
+	(gr_poly
+		(pts
+			(xy 158.55 48.5) (xy 159.05 49) (xy 159.05 48)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "56afe9a5-8e60-4376-a444-b3fe7b9109b1")
+	)
+	(gr_poly
+		(pts
+			(xy 139.15 79.3) (xy 139.65 78.8) (xy 138.65 78.8)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "83fa5b3c-10b8-45e5-ba75-7973aa79c0c6")
+	)
+	(gr_poly
+		(pts
+			(xy 154.6 54.1) (xy 155.1 53.6) (xy 154.1 53.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "926edc34-7f44-4552-8ea2-45b8a4f82549")
+	)
+	(gr_poly
+		(pts
+			(xy 129.35 60.4) (xy 129.85 59.9) (xy 128.85 59.9)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "9bea8b02-a019-4617-9d82-9793b73a502e")
+	)
+	(gr_poly
+		(pts
+			(xy 133.25 81.55) (xy 133.75 82.05) (xy 133.75 81.05)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "a052bcac-e794-44ed-9b23-4e95dea6371a")
+	)
+	(gr_poly
+		(pts
+			(xy 140.7 60.4) (xy 141.2 59.9) (xy 140.2 59.9)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e07f8e48-0478-44dc-9e3c-9cf23009e52a")
+	)
+	(gr_poly
+		(pts
+			(xy 161.2 50.2) (xy 160.7 49.7) (xy 160.7 50.7)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e22d7d3a-0be8-4825-93ae-c3c51d1e756d")
+	)
 	(gr_line
 		(start 120.1 81)
 		(end 120.1 29)
@@ -17214,7 +17310,7 @@
 		)
 	)
 	(gr_text "SERVO EN"
-		(at 153.6 49.8 90)
+		(at 153.55 49.4 90)
 		(layer "F.SilkS")
 		(uuid "dc2fc621-6f5a-468f-aeb0-ec129b3de66f")
 		(effects
